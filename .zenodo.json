@@ -1,0 +1,38 @@
+{
+  "title": "A15 sandbox-artefact audit: code and derived data for 'Deep learning attribution of malware families from sandbox behaviour traces transfers poorly between installations of the same sandbox'",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "access_right": "open",
+  "license": "MIT",
+  "description": "Code, derived data and documentation of a pre-registered audit of deep-learning malware family attribution across two installations of the CAPEv2 sandbox (MELD-DS-448 and WinMET): acquisition and sealing in a hash-chained ledger with RFC 3161 time-stamps, a frozen lexicon of behaviour, footprint and probing tokens, the evaluation engine, the measured results, figure code and the manuscript build. Derived data are under CC BY-NC-SA 4.0; the token-level lexicon is available on request under a data-use agreement.",
+  "creators": [
+    {
+      "name": "Beg, Rijvan",
+      "affiliation": "Department of Computer Science and Engineering, SRM University-AP, Amaravati, India"
+    }
+  ],
+  "keywords": [
+    "malware family attribution",
+    "sandbox traces",
+    "CAPEv2",
+    "digital forensics",
+    "shortcut learning",
+    "pre-registration",
+    "deep learning",
+    "evidence integrity"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.17605/OSF.IO/K5EPU",
+      "relation": "isDocumentedBy"
+    },
+    {
+      "identifier": "10.5281/zenodo.12647555",
+      "relation": "isDerivedFrom"
+    },
+    {
+      "identifier": "https://huggingface.co/datasets/MeldProject/MELD-DS-448",
+      "relation": "isDerivedFrom"
+    }
+  ]
+}

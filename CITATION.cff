@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the article and this release."
+title: "A15 sandbox-artefact audit: code and derived data for 'Deep learning attribution of malware families from sandbox behaviour traces transfers poorly between installations of the same sandbox'"
+version: 1.0.0
+date-released: 2026-11-17
+license: MIT
+type: software
+authors:
+  - family-names: Beg
+    given-names: Rijvan
+    affiliation: "Department of Computer Science and Engineering, SRM University-AP, Amaravati 522240, India"
+    email: rijvan.beg@gmail.com
+repository-code: "https://github.com/rijvan123/a15-sandbox-artefact-audit"
+identifiers:
+  - type: doi
+    value: 10.17605/OSF.IO/K5EPU
+    description: "Pre-registration of the study on the Open Science Framework"
+keywords:
+  - malware family attribution
+  - sandbox traces
+  - digital forensics
+  - shortcut learning
+  - pre-registration
+  - deep learning
+preferred-citation:
+  type: article
+  title: "Deep learning attribution of malware families from sandbox behaviour traces transfers poorly between installations of the same sandbox"
+  authors:
+    - family-names: Beg
+      given-names: Rijvan
+  journal: "Scientific Reports"
+  year: 2026
+  status: submitted

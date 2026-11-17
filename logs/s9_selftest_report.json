@@ -1,0 +1,259 @@
+{
+ "K6_projection_estimated": {
+  "K6_triggered": true,
+  "assumptions": {
+   "epochs": 10.0,
+   "eval_factor": 0.35,
+   "runs_per_cell": 39
+  },
+  "hours_by_learner": {
+   "bilstm": 1199.8839714011772,
+   "cnn": 81.06471190897308,
+   "transformer": 1021.5325192008148
+  },
+  "total_hours": 2302.481202510965,
+  "triage": "full factorial for Transformer and LightGBM only; BiLSTM and 1D-CNN unmasked and F-masked"
+ },
+ "dedup": {
+  "exact_duplicate_pairs": 0,
+  "nn_similarity_quantiles": [
+   0.38762874073145115,
+   0.6130969140884426,
+   0.8545320461249665,
+   0.9692275042444822
+  ],
+  "rule": {
+   "density_at_tau": 1.2902474749229076,
+   "n": 98,
+   "rule": "antimode"
+  },
+  "share_nn_ge_0.8": 0.28448275862068967,
+  "tau_J": 0.655
+ },
+ "field_audit": {
+  "calls_quantiles": [
+   0.0,
+   0.0,
+   470.5,
+   5774.75,
+   56890.79999999999
+  ],
+  "curated_out": 84,
+  "curation_counts": {
+   "no_calls_main": 19,
+   "no_processes": 65
+  },
+  "early_exit_share": 0.425,
+  "env_field_share": {
+   "analysis_start": 1.0,
+   "cape_version": 0.8,
+   "duration": 0.8,
+   "guest_build": 0.38,
+   "machine": 0.8,
+   "route": 0.8,
+   "timeout": 0.8
+  },
+  "label_share": {
+   "avclass": 0.2,
+   "cape": 0.52
+  },
+  "n": 200,
+  "time_key_share": {
+   "analysis_date": 1.0,
+   "vt_scan_date": 0.0
+  }
+ },
+ "host_probes": {
+  "I1": {
+   "deny_reason": "URLError: <urlopen error [Errno -2] Name or service not known>",
+   "reachable": false,
+   "status": 0,
+   "url": "https://huggingface.co/api/datasets/MeldProject/MELD-DS-448"
+  },
+  "I2": {
+   "deny_reason": "URLError: <urlopen error [Errno -2] Name or service not known>",
+   "reachable": false,
+   "status": 0,
+   "url": "https://zenodo.org/api/records/12647555"
+  },
+  "I3": {
+   "deny_reason": "URLError: <urlopen error [Errno -2] Name or service not known>",
+   "reachable": false,
+   "status": 0,
+   "url": "https://drive.google.com/"
+  },
+  "M": {
+   "deny_reason": "URLError: <urlopen error [Errno -2] Name or service not known>",
+   "reachable": false,
+   "status": 0,
+   "url": "https://huggingface.co/api/datasets/joyce8/EMBER2024"
+  },
+  "TSA": {
+   "deny_reason": "URLError: <urlopen error [Errno -2] Name or service not known>",
+   "reachable": false,
+   "status": 0,
+   "url": "https://freetsa.org/tsr"
+  }
+ },
+ "ingest": {
+  "curated_out": 84,
+  "members": 200,
+  "parsed": 200,
+  "seconds": 58.599745203
+ },
+ "learners": {
+  "IG_completeness": {
+   "bilstm": {
+    "median_delta": 1.634101209901928e-07,
+    "share_delta_le_0.05": 1.0
+   },
+   "bilstm_escalation": {
+    "criterion_met": true,
+    "m_final": 50,
+    "share_delta_ok": 1.0
+   },
+   "cnn": {
+    "median_delta": 0.003148440271615982,
+    "share_delta_le_0.05": 1.0
+   },
+   "cnn_escalation": {
+    "criterion_met": true,
+    "m_final": 50,
+    "share_delta_ok": 1.0
+   },
+   "transformer": {
+    "median_delta": 0.00014978539547882974,
+    "share_delta_le_0.05": 1.0
+   },
+   "transformer_escalation": {
+    "criterion_met": true,
+    "m_final": 50,
+    "share_delta_ok": 1.0
+   }
+  },
+  "P1": {
+   "bilstm": {
+    "P1_holds": true,
+    "max_abs_IG_at_masked_positions": 0.0,
+    "traces_with_F_positions": 2
+   },
+   "cnn": {
+    "P1_holds": true,
+    "max_abs_IG_at_masked_positions": 0.0,
+    "traces_with_F_positions": 2
+   },
+   "transformer": {
+    "P1_holds": true,
+    "max_abs_IG_at_masked_positions": 0.0,
+    "traces_with_F_positions": 2
+   }
+  },
+  "families_used": [
+   "reline",
+   "disabler"
+  ],
+  "note": "random split of 200 reports; training only exercises code paths, it is not an evaluation",
+  "seconds_per_trace_fwd_bwd_at_L": {
+   "bilstm": 0.09652158643750042,
+   "cnn": 0.00652104268749909,
+   "lgbm_fit_seconds_100_rounds": 2.751178014000004,
+   "transformer": 0.0821745616250027
+  },
+  "smoke_training": {
+   "bilstm": {
+    "K": 2,
+    "n_train": 11,
+    "n_val": 3,
+    "train_seconds": 2.5654737009999735
+   },
+   "cnn": {
+    "K": 2,
+    "n_train": 11,
+    "n_val": 3,
+    "train_seconds": 0.18550706199999922
+   },
+   "transformer": {
+    "K": 2,
+    "n_train": 11,
+    "n_val": 3,
+    "train_seconds": 5.618449197000018
+   }
+  }
+ },
+ "ledger": {
+  "anchor_trusted": false,
+  "anchor_tsa": "LOCAL-DEV-TSA",
+  "entries": 209,
+  "message": "ok",
+  "verify": true
+ },
+ "ledger_tests": {
+  "P10_detected": 1000,
+  "P10_edits": 1000,
+  "P11_vfrz_negative": 0,
+  "P11_vfrz_study": 1,
+  "P12_seal_us_per_entry": 201.16950549999046,
+  "P12_verify_us_per_entry": 4.624691117750056,
+  "chain_ok": true
+ },
+ "measured_on": "sandbox (1 CPU, 3 GB RAM)",
+ "privacy_scan": {
+  "hits": {
+   "email": 0,
+   "ipv4": 0,
+   "ipv6": 0,
+   "mac": 0,
+   "sid": 0,
+   "user_path": 0
+  },
+  "per_1000_traces": {
+   "email": 0.0,
+   "ipv4": 0.0,
+   "ipv6": 0.0,
+   "mac": 0.0,
+   "sid": 0.0,
+   "user_path": 0.0
+  },
+  "release_blocked": false,
+  "strings_scanned": 2680
+ },
+ "python": "3.12.16",
+ "stage": "S9 self-test",
+ "tokens": {
+  "L": 512,
+  "class_share_boundary_alt": {
+   "B": 0.9697961484160068,
+   "F": 0.0021400789066903275,
+   "P": 0.028063772677302888
+  },
+  "class_share_primary": {
+   "B": 0.959001817346451,
+   "F": 0.007327979880840109,
+   "P": 0.03367020277270893
+  },
+  "collapsed_length_quantiles": [
+   312.0,
+   2243.5,
+   41722.75
+  ],
+  "hook_set_size": 279,
+  "rule_firing_share": {
+   "B0": 0.939177487969613,
+   "F1": 0.0021354285831208133,
+   "F3": 0.0004055082152616179,
+   "F4": 4.6503235695139665e-06,
+   "F5": 0.004782392758888163,
+   "P1": 1.8601294278055867e-06,
+   "P10": 0.0002557677963232682,
+   "P3": 2.7901941417083802e-06,
+   "P5": 0.0022405258957918293,
+   "P6": 0.007829284761633715,
+   "P7": 0.023595741791713868,
+   "P8": 0.01941789109686252,
+   "P9": 0.00015067048365225252
+  },
+  "traces_kept": 116,
+  "vocab_size": 905
+ },
+ "torch": "2.5.1"
+}

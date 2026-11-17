@@ -1,0 +1,96 @@
+19:19:02 audit I1: 2,000 records read in 9 s; memory 185 MB (peak 194 MB)
+19:19:12 audit I1: 4,000 records read in 20 s; memory 196 MB (peak 219 MB)
+19:19:23 audit I1: 6,000 records read in 30 s; memory 209 MB (peak 226 MB)
+19:19:33 audit I1: 8,000 records read in 41 s; memory 230 MB (peak 245 MB)
+19:19:42 audit I1: 10,000 records read in 50 s; memory 236 MB (peak 264 MB)
+19:19:52 audit I1: 12,000 records read in 59 s; memory 239 MB (peak 264 MB)
+19:20:01 audit I1: 14,000 records read in 69 s; memory 260 MB (peak 390 MB)
+19:20:11 audit I1: 16,000 records read in 79 s; memory 266 MB (peak 390 MB)
+19:20:21 audit I1: 18,000 records read in 89 s; memory 288 MB (peak 390 MB)
+19:20:31 audit I1: 20,000 records read in 99 s; memory 295 MB (peak 390 MB)
+19:20:42 audit I1: 22,000 records read in 109 s; memory 302 MB (peak 390 MB)
+19:20:51 audit I1: 24,000 records read in 119 s; memory 313 MB (peak 390 MB)
+19:21:03 audit I1: 26,000 records read in 130 s; memory 322 MB (peak 390 MB)
+19:21:03 audit I1: 26,166 records read in 131 s (all)
+19:21:33 audit I2: 2,000 records read in 30 s; memory 227 MB (peak 390 MB)
+19:22:03 audit I2: 4,000 records read in 60 s; memory 242 MB (peak 448 MB)
+19:22:33 audit I2: 6,000 records read in 89 s; memory 251 MB (peak 448 MB)
+19:23:03 audit I2: 8,000 records read in 120 s; memory 269 MB (peak 448 MB)
+19:23:32 audit I2: 10,000 records read in 149 s; memory 273 MB (peak 448 MB)
+19:24:01 audit I2: 12,000 records read in 177 s; memory 284 MB (peak 448 MB)
+19:24:32 audit I2: 14,000 records read in 208 s; memory 296 MB (peak 448 MB)
+19:25:03 audit I2: 16,000 records read in 239 s; memory 303 MB (peak 448 MB)
+19:25:33 audit I2: 18,000 records read in 269 s; memory 308 MB (peak 448 MB)
+19:26:03 audit I2: 20,000 records read in 299 s; memory 321 MB (peak 448 MB)
+19:26:29 audit I2: 22,000 records read in 326 s; memory 328 MB (peak 448 MB)
+19:26:58 audit I2: 24,000 records read in 354 s; memory 314 MB (peak 521 MB)
+19:27:43 audit I2: 26,000 records read in 400 s; memory 348 MB (peak 536 MB)
+19:28:36 audit I2: 28,000 records read in 452 s; memory 346 MB (peak 536 MB)
+19:29:20 audit I2: 30,000 records read in 497 s; memory 363 MB (peak 536 MB)
+19:29:55 audit I2: 31,844 records read in 532 s (all)
+19:29:56 audit finished in 663 s; peak memory 536 MB
+{
+ "I1": {
+  "n": 26166,
+  "env_field_share": {
+   "cape_version": 1.0,
+   "guest_build": 0.0,
+   "machine": 1.0,
+   "timeout": 1.0,
+   "duration": 1.0,
+   "route": 1.0,
+   "analysis_start": 1.0
+  },
+  "time_key_share": {
+   "vt_scan_date": 0.0,
+   "analysis_date": 1.0
+  },
+  "label_share": {
+   "cape": 0.23668118932966445,
+   "avclass": 0.0
+  },
+  "curation_counts": {
+   "no_calls_main": 21,
+   "no_processes": 1
+  },
+  "curated_out": 22,
+  "early_exit_share": 0.05533898952839563,
+  "calls_quantiles": [
+   89.0,
+   801.0,
+   3124.0,
+   10607.0,
+   49041.5
+  ]
+ },
+ "I2": {
+  "n": 31844,
+  "env_field_share": {
+   "cape_version": 0.0,
+   "guest_build": 0.0,
+   "machine": 0.0,
+   "timeout": 0.0,
+   "duration": 0.0,
+   "route": 0.0,
+   "analysis_start": 1.0
+  },
+  "time_key_share": {
+   "vt_scan_date": 0.0,
+   "analysis_date": 1.0
+  },
+  "label_share": {
+   "cape": 1.0,
+   "avclass": 1.0
+  },
+  "curation_counts": {},
+  "curated_out": 0,
+  "early_exit_share": 0.004616254239417159,
+  "calls_quantiles": [
+   318.0,
+   2263.0,
+   6728.5,
+   35812.5,
+   132003.34999999998
+  ]
+ }
+}

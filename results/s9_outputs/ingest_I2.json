@@ -1,0 +1,32 @@
+{
+ "WinMET_volume_1.7z": {
+  "curated_out": 0,
+  "members": 6369,
+  "parsed": 6369,
+  "seconds": 8571.312382688997
+ },
+ "WinMET_volume_2.7z": {
+  "curated_out": 0,
+  "members": 6369,
+  "parsed": 6369,
+  "seconds": 7322.423042636001
+ },
+ "WinMET_volume_3.7z": {
+  "curated_out": 0,
+  "members": 6369,
+  "parsed": 6369,
+  "seconds": 7440.611883095
+ },
+ "WinMET_volume_4.7z": {
+  "curated_out": 0,
+  "members": 6369,
+  "parsed": 6369,
+  "seconds": 7129.659395369003
+ },
+ "WinMET_volume_5.7z": {
+  "curated_out": 0,
+  "members": 6368,
+  "parsed": 6368,
+  "seconds": 6920.841506498997
+ }
+}

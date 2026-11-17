@@ -1,0 +1,38 @@
+{
+ "H1": {
+  "claim": "artefact tokens alone identify families",
+  "components": "each installation",
+  "estimand": "psi1(I) = F1(f_art; M_B(D_te)) - F1(f_len; D_te)",
+  "margin": 3.0,
+  "reject": "one component below 3",
+  "support": "IUT: every component's lower bound above 3 points"
+ },
+ "H2": {
+  "claim": "test-time masking of F and P lowers macro-F1 more than matched random masks",
+  "components": "each installation",
+  "estimand": "psi2(I) = F1(f_base; M_rand(D_te)) - F1(f_base; M_FP(D_te))",
+  "margin": 3.0,
+  "reject": "TOST equivalence within +/-3 in both",
+  "support": "IUT above 3 points"
+ },
+ "H3": {
+  "claim": "cross-installation macro-F1 on shared families is lower than within-installation",
+  "components": "both directions",
+  "estimand": "psi3(I->I') = G_{I->I'}, equation 13",
+  "margin": 3.0,
+  "reject": "upper bound below 3 in either",
+  "support": "IUT above 3 points in both directions"
+ },
+ "H4": {
+  "claim": "F-masked training recovers part of the gap without losing more than 3 points within",
+  "components": "rho; each installation for psi4b",
+  "estimand": "psi4a = rho (equation 14, pooled); psi4b(I) = F1(f_mit; M_F(D_te)) - F1(f_base; D_te)",
+  "gate": "tested only if H3 is supported",
+  "margin": {
+   "psi4b": -3.0,
+   "rho": 0.1
+  },
+  "reject": "rho < 0.10",
+  "support": "rho > 0.10 and psi4b > -3 everywhere"
+ }
+}

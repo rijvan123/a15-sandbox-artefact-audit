@@ -1,0 +1,13 @@
+{
+ "families": 14,
+ "finished_utc": "2026-11-03T21:36:02Z",
+ "peak_rss_mb": 2138.1,
+ "seconds": 1816.4,
+ "selected": {
+  "I1_test": 280,
+  "I1_train": 336,
+  "I2_test": 981,
+  "I2_train": 1963
+ },
+ "stage": "dryrun"
+}

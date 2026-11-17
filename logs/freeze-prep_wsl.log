@@ -1,0 +1,11 @@
+{
+ "lexicon.json": "6b5a02cfcc686218abf044e0ac54c32541e34dec8f67373b96e1dd71a89a8dec",
+ "hypotheses.json": "e45e4deb23dd5fcfe168fcec167de9cb73f32dd276efb1523296cd22edac17f3",
+ "settings.json": "d33b1db733caf455f9abe38c9ec8e6b840cd7d70dbaf439d9f17ed2084930470",
+ "alias_table.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+ "family_sets.json": "a9c0ecd9649e53646c45d49e0fba990c6c68ff9b4c9abdcc5291631c927f05ac",
+ "split_I1_o1.json": "dcaa0785f5d159b3754302fbe71ddecb745f980566688a6f485d514a8f2a5663",
+ "split_I1_o2.json": "69450c8c501d88888cba90bfb95f6c1b99713d61d7b5470aaddfeeccf8ade0ee",
+ "split_I1_o3.json": "96913cfcaa064473b2da9b978e4aaa5b0200f5917bae35c86a0f5a181e27c2bd",
+ "split_I2_grouped.json": "69806d58321ee14d4c32f3e47913432ef04475700dd6a6fded589fca25d10e3c"
+}

@@ -1,0 +1,373 @@
+{
+ "bootstrap": {
+  "bounds": "percentile",
+  "n_boot": 9999,
+  "unit": "near-duplicate cluster within (test set, origin, family)"
+ },
+ "compute_plan": {
+  "amendment": "3 (4 November 2026) and 5 (5 November 2026), before the freeze",
+  "deep_learners": "Transformer (confirmatory) and 1D-CNN: full factorial, search_configs and seeds as above; BiLSTM: unmasked and F-masked only; n-gram LightGBM: full factorial",
+  "hardware": "authors' PC, CPU only; PyTorch thread count set by A15_THREADS and recorded per run",
+  "reason": "K6: the registered plan projected above 24 CPU-hours and no GPU is available; the corrected dry run (amendment 4) projected about 59 h for this plan",
+  "sequence_cap": 256
+ },
+ "confirmatory_learner": "Transformer encoder; BiLSTM, 1D-CNN and n-gram LightGBM secondary",
+ "dedup": {
+  "lsh": {
+   "0.7": [
+    32,
+    4
+   ],
+   "0.8": [
+    25,
+    5
+   ],
+   "0.9": [
+    16,
+    8
+   ]
+  },
+  "tau_rule": "antimode on [0.5, 0.95], fallback 0.8"
+ },
+ "dropout_grid": [
+  0.25,
+  0.5,
+  0.75,
+  1.0
+ ],
+ "error_control": {
+  "alpha_one_sided": 0.025,
+  "families": [
+   "support",
+   "rejection"
+  ],
+  "holm_m": 4
+ },
+ "family_thresholds": {
+  "test": 10,
+  "train_period": 20
+ },
+ "gamma_grid": [
+  0.0,
+  0.5,
+  1.0
+ ],
+ "gate_fields": [
+  "cape_version",
+  "guest_build",
+  "hook_set_digest",
+  "timeout",
+  "route"
+ ],
+ "integrated_gradients": {
+  "baseline": "<M>",
+  "criterion": [
+   0.05,
+   0.95
+  ],
+  "m": [
+   50,
+   100,
+   200
+  ],
+  "quadrature": "Gauss-Legendre",
+  "target": "logit"
+ },
+ "k5_action": "widen windows or narrow families, else raise the margin to 3 points before scoring",
+ "k5_applied": {
+  "amendment": "5 (5 November 2026, before the freeze)",
+  "consequence": "the projected half-width still exceeds 3 points, so equivalence and non-inferiority verdicts may be inconclusive; this is stated before scoring",
+  "margin_points": 3.0,
+  "registered_half_width_limit_points": 2.0,
+  "why": "the corrected dry run projected a 95% half-width of 5.8 points at the smallest origin; the test windows cannot widen (the three windows cover March-August 2025 and MELD-DS-448 ends in August 2025); the authors kept every family"
+ },
+ "matched_mask_ladder": [
+  [
+   10,
+   10
+  ],
+  [
+   5,
+   5
+  ],
+  [
+   4,
+   4
+  ],
+  [
+   3,
+   3
+  ]
+ ],
+ "max_borrow": 0.1,
+ "measured_at_S9": {
+  "P3": {
+   "J_w": {
+    "B": 0.3966382038047472,
+    "F": 0.3014563589892435,
+    "P": 0.3905498574120194
+   },
+   "P3_holds": true,
+   "ci95": [
+    0.06106664419281278,
+    0.12489386217764151
+   ],
+   "diff_B_minus_F": 0.09518184481550368,
+   "implication": "",
+   "n_boot": 1999,
+   "n_token_types": {
+    "B": 9793,
+    "F": 235,
+    "P": 368
+   },
+   "n_traces": [
+    26144,
+    31844
+   ]
+  },
+  "dryrun": {
+   "K5_P4": {
+    "K5_action": "widen windows or narrow families; else raise the margin to 3 points before scoring",
+    "K5_triggered": true,
+    "N_req_planning": 2952,
+    "P4_holds": true,
+    "c_F": 1.1799658943074505,
+    "formula_hw_dry": 6.036975575096802,
+    "margin_in_force": 3.0,
+    "measured_hw_dry": 7.123425283381334,
+    "projected_exceeds_margin": true,
+    "projected_hw_full": 5.801299687526662,
+    "ratio": 1.1799658943074505
+   },
+   "K6": {
+    "K6_triggered": true,
+    "assumptions": {
+     "epochs": 10.0,
+     "eval_factor": 0.35,
+     "runs_per_cell": 39
+    },
+    "dryrun_training_seconds_per_trace_epoch": 0.011509794056564333,
+    "hours_by_learner": {
+     "bilstm": 69.81918655248009,
+     "cnn": 4.063628798666501,
+     "transformer": 36.30954159267865
+    },
+    "machine": {
+     "cpu_count": 12,
+     "loadavg_after": [
+      7.8955078125,
+      4.65625,
+      2.4169921875
+     ],
+     "loadavg_before": [
+      6.43896484375,
+      2.78125,
+      1.55908203125
+     ],
+     "torch_threads": 8
+    },
+    "n_train_full_design": {
+     "I1_by_origin": [
+      1370,
+      2392,
+      3146
+     ],
+     "I1_mean": 2302.6666666666665,
+     "I2": 5241
+    },
+    "seconds_per_trace_at_L": {
+     "bilstm": 0.03929509814531116,
+     "cnn": 0.0022870603390614972,
+     "transformer": 0.020435457228123254
+    },
+    "seconds_per_trace_single_config_as_before": {
+     "bilstm": 0.03667935218749108,
+     "cnn": 0.0029463335625337095,
+     "transformer": 0.02403457868751957
+    },
+    "timing_by_configuration": {
+     "bilstm": {
+      "max": 0.0550678173749759,
+      "mean": 0.03929509814531116,
+      "min": 0.0227252072812405,
+      "n": 32,
+      "per_config": [
+       0.03212822071876076,
+       0.05117606224999349,
+       0.0227252072812405,
+       0.02546123034375114,
+       0.05173116640622766,
+       0.050277492812483615,
+       0.02381012156251927,
+       0.04910665540626269,
+       0.04979866299999003,
+       0.052934619875003364,
+       0.048463711124981046,
+       0.04912990981250687,
+       0.05036607181250474,
+       0.023558218687497856,
+       0.025896693718749475,
+       0.024595110843762313,
+       0.05120126071875575,
+       0.023533861187502225,
+       0.0550678173749759,
+       0.02493986796875447
+      ],
+      "reps": 3
+     },
+     "cnn": {
+      "max": 0.0030297759687414327,
+      "mean": 0.0022870603390614972,
+      "min": 0.0015646870625118936,
+      "n": 32,
+      "per_config": [
+       0.0017769854062521517,
+       0.0028185823124999843,
+       0.001627898312506204,
+       0.0016446614062317622,
+       0.0027717855312516804,
+       0.0027099797187588592,
+       0.001737861187478984,
+       0.0028485070000101587,
+       0.0027443911249918074,
+       0.002672244156229908,
+       0.0027553229062675655,
+       0.002811202312500427,
+       0.0029033410312422347,
+       0.001627095687496194,
+       0.0015646870625118936,
+       0.0015688064687537917,
+       0.0027358607187579764,
+       0.0017104062812620668,
+       0.0030297759687414327,
+       0.0016818121874848657
+      ],
+      "reps": 3
+     },
+     "transformer": {
+      "max": 0.02711357115623514,
+      "mean": 0.020435457228123254,
+      "min": 0.01059537896875895,
+      "n": 32,
+      "per_config": [
+       0.012338135593751076,
+       0.02234373893747943,
+       0.015377743812479139,
+       0.026399665000013783,
+       0.020121683187483086,
+       0.020682274218756902,
+       0.026578346156242105,
+       0.01059537896875895,
+       0.023272832312500213,
+       0.019344815875001586,
+       0.0233840302499857,
+       0.02663512562500614,
+       0.02711357115623514,
+       0.02252747440624603,
+       0.016949572593745188,
+       0.0203870846562495,
+       0.01146700540624579,
+       0.025796538718765305,
+       0.01278878003125783,
+       0.02460534765626221
+      ],
+      "reps": 3
+     }
+    },
+    "total_hours": 110.19235694382525,
+    "triage": "full factorial for Transformer and LightGBM only; BiLSTM and 1D-CNN unmasked and F-masked",
+    "triaged_plan": {
+     "K6_triggered": true,
+     "hours_by_learner": {
+      "bilstm": 17.902355526276953,
+      "cnn": 4.063628798666501,
+      "transformer": 36.30954159267865
+     },
+     "rule": "CPU plan (amendments 3 and 5): Transformer and 1D-CNN full factorial with 20 search configurations and 5 seeds; BiLSTM unmasked and F-masked only; LightGBM full factorial (minutes per run, not projected)",
+     "runs_per_cell": {
+      "bilstm": 10,
+      "cnn": 39,
+      "transformer": 39
+     },
+     "total_hours": 58.275525917622105
+    }
+   },
+   "L": 256,
+   "P1_holds": true,
+   "P1_max_abs_IG_masked": 0.0,
+   "design": "amendment 3: shared families, all pseudo-origin traces, WinMET training and validation parts; amendment 4: all requested epochs, K6 timed over the search configurations",
+   "distinct_predictions": {
+    "cross": 7,
+    "within": 8
+   },
+   "epochs_requested": 10,
+   "epochs_run": 10,
+   "families": [
+    "amadey",
+    "gcleaner",
+    "guloader",
+    "loki",
+    "nanocore",
+    "quasar",
+    "redline",
+    "remcos",
+    "snakelogger"
+   ],
+   "gap_ci95": [
+    10.232851324974092,
+    24.47970189173676
+   ],
+   "gap_dry": 17.248988970092764,
+   "mean_recall_within": 0.45913546688720047,
+   "n": {
+    "cross": 384,
+    "train": 716,
+    "within": 663
+   },
+   "n_full_effective": 789.3031400966183,
+   "train_seconds": 82.41012544500063
+  }
+ },
+ "origins": [
+  [
+   1,
+   "2025-02",
+   "2025-03-01",
+   "2025-04-30"
+  ],
+  [
+   2,
+   "2025-04",
+   "2025-05-01",
+   "2025-06-30"
+  ],
+  [
+   3,
+   "2025-06",
+   "2025-07-01",
+   "2025-08-31"
+  ]
+ ],
+ "primary_metric": "family-balanced macro-F1 (decision D2); raw macro-F1 beside it",
+ "recovered_share": "pooled over both directions",
+ "referral": {
+  "eta_F": 0.05,
+  "removed_if": "P6 fails",
+  "statistic": "phi_F of the base model on the unmasked trace (D1)"
+ },
+ "search_configs": 20,
+ "seeds": [
+  11,
+  23,
+  37,
+  41,
+  53
+ ],
+ "sequences": {
+  "L_rule": "smallest power of two >= P95, capped at 256 (512 before amendment 3)",
+  "beta": "min(floor(log2 n_run), 7)",
+  "oos_class": "F (B in sensitivity)",
+  "truncation": "head-plus-tail",
+  "vocab_min_traces": 5
+ }
+}

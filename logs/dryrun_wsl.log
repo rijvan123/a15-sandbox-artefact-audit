@@ -1,0 +1,119 @@
+21:05:58 dryrun pass 1 I1: 2,000 records read in 10 s; memory 666 MB (peak 686 MB)
+21:06:09 dryrun pass 1 I1: 4,000 records read in 21 s; memory 674 MB (peak 695 MB)
+21:06:21 dryrun pass 1 I1: 6,000 records read in 33 s; memory 677 MB (peak 695 MB)
+21:06:32 dryrun pass 1 I1: 8,000 records read in 44 s; memory 678 MB (peak 695 MB)
+21:06:42 dryrun pass 1 I1: 10,000 records read in 55 s; memory 681 MB (peak 695 MB)
+21:06:53 dryrun pass 1 I1: 12,000 records read in 65 s; memory 682 MB (peak 695 MB)
+21:07:04 dryrun pass 1 I1: 14,000 records read in 76 s; memory 683 MB (peak 767 MB)
+21:07:15 dryrun pass 1 I1: 16,000 records read in 88 s; memory 683 MB (peak 767 MB)
+21:07:26 dryrun pass 1 I1: 18,000 records read in 99 s; memory 684 MB (peak 767 MB)
+21:07:37 dryrun pass 1 I1: 20,000 records read in 110 s; memory 684 MB (peak 767 MB)
+21:07:48 dryrun pass 1 I1: 22,000 records read in 121 s; memory 684 MB (peak 767 MB)
+21:08:00 dryrun pass 1 I1: 24,000 records read in 132 s; memory 684 MB (peak 767 MB)
+21:08:11 dryrun pass 1 I1: 26,000 records read in 143 s; memory 684 MB (peak 767 MB)
+21:08:11 dryrun pass 1 I1: 26,166 records read in 143 s (all)
+21:08:44 dryrun pass 1 I2: 2,000 records read in 33 s; memory 703 MB (peak 767 MB)
+21:09:17 dryrun pass 1 I2: 4,000 records read in 65 s; memory 717 MB (peak 862 MB)
+21:09:51 dryrun pass 1 I2: 6,000 records read in 100 s; memory 712 MB (peak 862 MB)
+21:10:26 dryrun pass 1 I2: 8,000 records read in 135 s; memory 712 MB (peak 862 MB)
+21:11:02 dryrun pass 1 I2: 10,000 records read in 171 s; memory 713 MB (peak 862 MB)
+21:11:37 dryrun pass 1 I2: 12,000 records read in 205 s; memory 714 MB (peak 862 MB)
+21:12:13 dryrun pass 1 I2: 14,000 records read in 241 s; memory 717 MB (peak 862 MB)
+21:12:48 dryrun pass 1 I2: 16,000 records read in 277 s; memory 717 MB (peak 862 MB)
+21:13:26 dryrun pass 1 I2: 18,000 records read in 314 s; memory 719 MB (peak 862 MB)
+21:14:03 dryrun pass 1 I2: 20,000 records read in 352 s; memory 722 MB (peak 862 MB)
+21:14:38 dryrun pass 1 I2: 22,000 records read in 387 s; memory 722 MB (peak 862 MB)
+21:15:15 dryrun pass 1 I2: 24,000 records read in 424 s; memory 723 MB (peak 884 MB)
+21:15:52 dryrun pass 1 I2: 26,000 records read in 461 s; memory 726 MB (peak 884 MB)
+21:16:29 dryrun pass 1 I2: 28,000 records read in 498 s; memory 726 MB (peak 884 MB)
+21:17:08 dryrun pass 1 I2: 30,000 records read in 537 s; memory 727 MB (peak 884 MB)
+21:17:43 dryrun pass 1 I2: 31,844 records read in 572 s (all)
+21:17:58 dryrun pass 2 I1: 2,000 records read in 14 s; memory 728 MB (peak 884 MB)
+21:18:13 dryrun pass 2 I1: 4,000 records read in 30 s; memory 728 MB (peak 884 MB)
+21:18:30 dryrun pass 2 I1: 6,000 records read in 47 s; memory 728 MB (peak 884 MB)
+21:18:45 dryrun pass 2 I1: 8,000 records read in 62 s; memory 728 MB (peak 884 MB)
+21:19:00 dryrun pass 2 I1: 10,000 records read in 76 s; memory 728 MB (peak 884 MB)
+21:19:14 dryrun pass 2 I1: 12,000 records read in 91 s; memory 728 MB (peak 884 MB)
+21:19:28 dryrun pass 2 I1: 14,000 records read in 105 s; memory 728 MB (peak 884 MB)
+21:19:42 dryrun pass 2 I1: 16,000 records read in 119 s; memory 728 MB (peak 884 MB)
+21:19:57 dryrun pass 2 I1: 18,000 records read in 133 s; memory 727 MB (peak 884 MB)
+21:20:12 dryrun pass 2 I1: 20,000 records read in 149 s; memory 728 MB (peak 884 MB)
+21:20:27 dryrun pass 2 I1: 22,000 records read in 164 s; memory 728 MB (peak 884 MB)
+21:20:42 dryrun pass 2 I1: 24,000 records read in 179 s; memory 728 MB (peak 884 MB)
+21:20:58 dryrun pass 2 I1: 26,000 records read in 194 s; memory 728 MB (peak 884 MB)
+21:20:59 dryrun pass 2 I1: 26,166 records read in 195 s (all)
+21:21:53 dryrun pass 2 I2: 2,000 records read in 54 s; memory 730 MB (peak 884 MB)
+21:22:44 dryrun pass 2 I2: 4,000 records read in 105 s; memory 737 MB (peak 884 MB)
+21:23:36 dryrun pass 2 I2: 6,000 records read in 157 s; memory 730 MB (peak 884 MB)
+21:24:34 dryrun pass 2 I2: 8,000 records read in 215 s; memory 731 MB (peak 884 MB)
+21:25:30 dryrun pass 2 I2: 10,000 records read in 271 s; memory 731 MB (peak 884 MB)
+21:26:24 dryrun pass 2 I2: 12,000 records read in 325 s; memory 731 MB (peak 884 MB)
+21:27:21 dryrun pass 2 I2: 14,000 records read in 382 s; memory 788 MB (peak 884 MB)
+21:28:17 dryrun pass 2 I2: 16,000 records read in 438 s; memory 735 MB (peak 884 MB)
+21:29:11 dryrun pass 2 I2: 18,000 records read in 492 s; memory 750 MB (peak 884 MB)
+21:30:08 dryrun pass 2 I2: 20,000 records read in 549 s; memory 752 MB (peak 884 MB)
+21:30:59 dryrun pass 2 I2: 22,000 records read in 600 s; memory 751 MB (peak 884 MB)
+21:31:57 dryrun pass 2 I2: 24,000 records read in 658 s; memory 753 MB (peak 951 MB)
+21:32:52 dryrun pass 2 I2: 26,000 records read in 713 s; memory 755 MB (peak 1,019 MB)
+21:33:42 dryrun pass 2 I2: 28,000 records read in 763 s; memory 755 MB (peak 1,019 MB)
+21:34:38 dryrun pass 2 I2: 30,000 records read in 819 s; memory 755 MB (peak 1,019 MB)
+21:35:28 dryrun pass 2 I2: 31,844 records read in 869 s (all)
+21:36:02 dryrun finished in 1,816 s; peak memory 2,138 MB
+{
+ "families": [
+  "agenttesla",
+  "amadey",
+  "asyncrat",
+  "azorult",
+  "cobaltstrike",
+  "darkcloud",
+  "expiro",
+  "formbook",
+  "gcleaner",
+  "guloader",
+  "lockbit",
+  "loki",
+  "nanocore",
+  "neshta"
+ ],
+ "n": {
+  "train": 63,
+  "within": 30,
+  "cross": 98
+ },
+ "L": 512,
+ "gap_dry": 3.3306690738754696e-16,
+ "gap_ci95": [
+  3.3306690738754696e-16,
+  3.3306690738754696e-16
+ ],
+ "K5_P4": {
+  "measured_hw_dry": 0.0,
+  "formula_hw_dry": 8.923120181347146,
+  "ratio": 0.0,
+  "P4_holds": false,
+  "c_F": 0.0,
+  "projected_hw_full": 0.0,
+  "N_req_planning": 0,
+  "K5_triggered": false,
+  "K5_action": ""
+ },
+ "K6": {
+  "hours_by_learner": {
+   "transformer": 1615.2500776475338,
+   "bilstm": 5136.437557584552,
+   "cnn": 83.20761662862532
+  },
+  "total_hours": 6834.895251860711,
+  "K6_triggered": true,
+  "triage": "full factorial for Transformer and LightGBM only; BiLSTM and 1D-CNN unmasked and F-masked",
+  "assumptions": {
+   "epochs": 10.0,
+   "eval_factor": 0.35,
+   "runs_per_cell": 39
+  }
+ },
+ "P1_max_abs_IG_masked": 0.0,
+ "P1_holds": true,
+ "train_seconds": 8.997415501013165
+}

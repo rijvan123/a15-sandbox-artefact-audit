@@ -1,0 +1,11 @@
+{
+ "finished_utc": "2026-11-03T21:05:42Z",
+ "nonzero_counts": {
+  "I1": 4595889,
+  "I2": 5983265
+ },
+ "peak_rss_mb": 969.2,
+ "seconds": 2346.7,
+ "stage": "overlap",
+ "token_types": 10396
+}

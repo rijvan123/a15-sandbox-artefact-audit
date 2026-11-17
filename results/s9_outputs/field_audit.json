@@ -1,0 +1,65 @@
+{
+ "I1": {
+  "calls_quantiles": [
+   89.0,
+   801.0,
+   3124.0,
+   10607.0,
+   49041.5
+  ],
+  "curated_out": 22,
+  "curation_counts": {
+   "no_calls_main": 21,
+   "no_processes": 1
+  },
+  "early_exit_share": 0.05533898952839563,
+  "env_field_share": {
+   "analysis_start": 1.0,
+   "cape_version": 1.0,
+   "duration": 1.0,
+   "guest_build": 0.0,
+   "machine": 1.0,
+   "route": 1.0,
+   "timeout": 1.0
+  },
+  "label_share": {
+   "avclass": 0.0,
+   "cape": 0.23668118932966445
+  },
+  "n": 26166,
+  "time_key_share": {
+   "analysis_date": 1.0,
+   "vt_scan_date": 0.0
+  }
+ },
+ "I2": {
+  "calls_quantiles": [
+   318.0,
+   2263.0,
+   6728.5,
+   35812.5,
+   132003.34999999998
+  ],
+  "curated_out": 0,
+  "curation_counts": {},
+  "early_exit_share": 0.004616254239417159,
+  "env_field_share": {
+   "analysis_start": 1.0,
+   "cape_version": 0.0,
+   "duration": 0.0,
+   "guest_build": 0.0,
+   "machine": 0.0,
+   "route": 0.0,
+   "timeout": 0.0
+  },
+  "label_share": {
+   "avclass": 1.0,
+   "cape": 1.0
+  },
+  "n": 31844,
+  "time_key_share": {
+   "analysis_date": 1.0,
+   "vt_scan_date": 0.0
+  }
+ }
+}

@@ -1,0 +1,17 @@
+name: a15-s9
+channels: [conda-forge]
+dependencies:
+  - python=3.12
+  - pytorch=2.5.1=cpu*
+  - numpy=2.1
+  - pip
+  - pip:
+      - scipy==1.14.1
+      - scikit-learn==1.5.2
+      - pandas==2.2.3
+      - lightgbm==4.6.0
+      - py7zr==0.22.0
+      - ijson==3.3.0
+      - matplotlib==3.9.2
+      - huggingface_hub==0.26.2
+      - pytest==8.3.3

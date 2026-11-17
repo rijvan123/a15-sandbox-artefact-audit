@@ -1,0 +1,104 @@
+{
+ "checked_utc": "2026-11-04T05:08:04Z",
+ "study_id": "A15-sandbox-artefact-audit/v1",
+ "entries": 130758,
+ "chain_and_roots_verify": true,
+ "message": "ok",
+ "note": "hash chain and every anchored Merkle root recomputed; RFC 3161 tokens are checked with the TSA certificates on the authors' PC",
+ "actions": {
+  "acquire": 17,
+  "substitution": 4,
+  "pending_anchor_policy": 1,
+  "anchor": 5,
+  "disk_check": 2,
+  "resolve_version": 1,
+  "seal": 130724,
+  "lexicon_seal": 1,
+  "gate": 2,
+  "freeze_prepared": 1
+ },
+ "anchors": [
+  {
+   "i": 7,
+   "batch_start": 1,
+   "batch_end": 6,
+   "root": "7a729c1860dc0058c0bbb5a4c4442ba24b31a7d4af767f010fb4c11f805d8bc0",
+   "tsa": "LOCAL-DEV-TSA",
+   "trusted": 0,
+   "tsa_time": "Nov  2 04:14:55 2026 GMT",
+   "tau": "2026-11-02T04:14:55.168652+00:00"
+  },
+  {
+   "i": 27,
+   "batch_start": 8,
+   "batch_end": 26,
+   "root": "e96812ad0bde3baad74f110527bf4c9e0ccac4e8ec03a0738483a9e824b8dcab",
+   "tsa": "https://freetsa.org/tsr",
+   "trusted": 1,
+   "tsa_time": "Nov  2 08:50:04 2026 GMT",
+   "tau": "2026-11-02T08:50:04.631079+00:00"
+  },
+  {
+   "i": 55150,
+   "batch_start": 28,
+   "batch_end": 55149,
+   "root": "104a3fc5bc3a93469d780904861cc6ae8d2f2e3a35f90540b278ae77dcd4995e",
+   "tsa": "https://freetsa.org/tsr",
+   "trusted": 1,
+   "tsa_time": "Nov  2 22:50:12 2026 GMT",
+   "tau": "2026-11-02T22:50:12.461482+00:00"
+  },
+  {
+   "i": 104587,
+   "batch_start": 55151,
+   "batch_end": 104586,
+   "root": "90dcdefc093aa52b2f0f64da7eee70cf5a5b1b06260ed644102bd77b3724ac88",
+   "tsa": "https://freetsa.org/tsr",
+   "trusted": 1,
+   "tsa_time": "Nov  3 13:53:02 2026 GMT",
+   "tau": "2026-11-03T13:53:02.380316+00:00"
+  },
+  {
+   "i": 130754,
+   "batch_start": 104588,
+   "batch_end": 130753,
+   "root": "6cab1ae5fd393750252ee51fc7c4b0f40716626a1ab0e48bff59fc2b34bc5708",
+   "tsa": "https://freetsa.org/tsr",
+   "trusted": 1,
+   "tsa_time": "Nov  3 17:48:29 2026 GMT",
+   "tau": "2026-11-03T17:48:29.740670+00:00"
+  }
+ ],
+ "unanchored_entries": [
+  {
+   "i": 130755,
+   "action": "lexicon_seal",
+   "evidence_id": "lexicon",
+   "tau": "2026-11-03T20:26:34.259155+00:00",
+   "d_f": "6b5a02cfcc686218abf044e0ac54c32541e34dec8f67373b96e1dd71a89a8dec"
+  },
+  {
+   "i": 130756,
+   "action": "gate",
+   "evidence_id": "P3",
+   "tau": "2026-11-03T21:05:42.702525+00:00",
+   "d_f": null
+  },
+  {
+   "i": 130757,
+   "action": "gate",
+   "evidence_id": "dryrun",
+   "tau": "2026-11-03T21:36:02.560131+00:00",
+   "d_f": null
+  },
+  {
+   "i": 130758,
+   "action": "freeze_prepared",
+   "evidence_id": null,
+   "tau": "2026-11-03T21:36:07.221510+00:00",
+   "d_f": null
+  }
+ ],
+ "last_hash": "094f818a2e0bf537368a29543be6ad8c5ae11be5274a73c6d534d2e88ba67ed0",
+ "first_prev_h0": "433e7cb422644957aa66e2a206d04ee0e9519331b3b479a03e3862f27963b4c4"
+}

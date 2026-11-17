@@ -1,0 +1,29 @@
+{
+ "I2_near_duplicate_clusters": {
+  "bands": 25,
+  "buckets_2_or_more": 60535,
+  "buckets_over_cap": 0,
+  "clusters": 16916,
+  "cross_label_pairs": 0,
+  "jaccard_evaluated": 4947044,
+  "max_bucket": 2114,
+  "merges": 14928,
+  "pairs_upper_bound": 51192513,
+  "pairs_visited": 15656773,
+  "rows": 5,
+  "tau_J": 0.8,
+  "traces": 31844,
+  "traces_in_buckets_over_cap": 0
+ },
+ "I2_split_rule": "grouped",
+ "api_names": 467,
+ "finished_utc": "2026-11-03T19:56:17Z",
+ "hook_set_size": 358,
+ "peak_rss_mb": 698.9,
+ "records_retained": {
+  "I1": 26144,
+  "I2": 31844
+ },
+ "seconds": 1579.1,
+ "stage": "harmonise"
+}

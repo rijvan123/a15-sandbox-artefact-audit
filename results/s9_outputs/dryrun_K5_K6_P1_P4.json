@@ -1,0 +1,58 @@
+{
+ "K5_P4": {
+  "K5_action": "",
+  "K5_triggered": false,
+  "N_req_planning": 0,
+  "P4_holds": false,
+  "c_F": 0.0,
+  "formula_hw_dry": 8.923120181347146,
+  "measured_hw_dry": 0.0,
+  "projected_hw_full": 0.0,
+  "ratio": 0.0
+ },
+ "K6": {
+  "K6_triggered": true,
+  "assumptions": {
+   "epochs": 10.0,
+   "eval_factor": 0.35,
+   "runs_per_cell": 39
+  },
+  "hours_by_learner": {
+   "bilstm": 5136.437557584552,
+   "cnn": 83.20761662862532,
+   "transformer": 1615.2500776475338
+  },
+  "total_hours": 6834.895251860711,
+  "triage": "full factorial for Transformer and LightGBM only; BiLSTM and 1D-CNN unmasked and F-masked"
+ },
+ "L": 512,
+ "P1_holds": true,
+ "P1_max_abs_IG_masked": 0.0,
+ "families": [
+  "agenttesla",
+  "amadey",
+  "asyncrat",
+  "azorult",
+  "cobaltstrike",
+  "darkcloud",
+  "expiro",
+  "formbook",
+  "gcleaner",
+  "guloader",
+  "lockbit",
+  "loki",
+  "nanocore",
+  "neshta"
+ ],
+ "gap_ci95": [
+  3.3306690738754696e-16,
+  3.3306690738754696e-16
+ ],
+ "gap_dry": 3.3306690738754696e-16,
+ "n": {
+  "cross": 98,
+  "train": 63,
+  "within": 30
+ },
+ "train_seconds": 8.997415501013165
+}

@@ -1,0 +1,12 @@
+# Tested in the claude.ai sandbox on 1-2 November 2026 (Python 3.12, CPU only). Cowork: pip install -r requirements.txt
+numpy==2.1.3
+scipy==1.14.1
+scikit-learn==1.5.2
+pandas==2.2.3
+lightgbm==4.6.0
+torch==2.5.1          # PyPI wheels for macOS and Windows are CPU builds
+py7zr==0.22.0         # pinned: cape.stream_7z uses its per-member worker targets
+ijson==3.3.0
+matplotlib==3.9.2
+huggingface_hub==0.26.2
+pytest==8.3.3
