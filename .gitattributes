@@ -1,2 +1,2 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Store every file byte for byte: this release is checked against SHA-256 digests
+* -text
